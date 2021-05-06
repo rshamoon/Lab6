@@ -73,7 +73,9 @@ class JournalEntry extends HTMLElement {
      */
     
     // CODE GOES HERE
-
+    //this.title = this.shadowRoot.getElementById('h2').querySelector('entry-title');
+    
+    
     if (entry.image) {
       let entryImage;
       /*
@@ -84,7 +86,6 @@ class JournalEntry extends HTMLElement {
        */
 
       // CODE GOES HERE vvv
-
 
 
 
