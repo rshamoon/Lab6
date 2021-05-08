@@ -93,6 +93,7 @@ class JournalEntry extends HTMLElement {
       entryImage.alt = entry.image.alt;
 
       currEntry.appendChild(entryImage);
+      currEntry.getElementsByTagName("img")[0].className = "entry-image";
 
       // CODE GOES HERE ^^^
 
@@ -116,10 +117,11 @@ class JournalEntry extends HTMLElement {
 
       // CODE GOES HERE vvv
 
-      entryAudio = new Audio(entry.audio.src);
+      entryAudio = new Audio(entry.audio);  
       entryAudio.controls = true;
 
       currEntry.appendChild(entryAudio);
+      currEntry.getElementsByTagName("audio")[0].className = "entry-audio";
 
 
 
